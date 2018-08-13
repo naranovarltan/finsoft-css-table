@@ -85,6 +85,7 @@ i {
     justify-content: space-between;
     padding: 10px 18px;
     font-size: 0.9em;
+    z-index: 10;
 }
 
 .title > li {
@@ -113,6 +114,10 @@ i {
 
 .asks-title__item.first, .asks-table__cell.first {
     text-align: left;
+}
+
+.bids-table__cell.last, .asks-table__cell.first {
+    z-index: -3;
 }
 
 /*Строки таблицы*/
