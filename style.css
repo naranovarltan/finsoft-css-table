@@ -1,0 +1,158 @@
+html, body {
+    font-family: "Roboto", Sans-Serif;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    padding: 0;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Хедер*/
+
+i {
+    cursor: pointer;
+    color: #acb3bd;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title, .page-info {
+    display: flex;
+    align-items: center;
+}
+
+.fa.fa-angle-down {
+    margin-right: 8px;
+}
+
+.fa.fa-info-circle {
+    margin: 20px;
+}
+
+/*Заголовки таблицы*/
+
+.main {
+    border: 1px solid #f0f2f5;
+}
+
+.main-table {
+    border: 1px solid #f0f2f5;
+    overflow: auto;
+    height: 300px;
+    visibility: hidden;
+}
+
+.container, .main-table:hover, .main-table:focus {
+    visibility: visible;
+}
+
+.container__title {
+    display: flex;
+    position: fixed;
+    width: 878px;
+    background-color: #ffffff;
+}
+
+.container__bids-title, .container__asks-title {
+    flex: 1;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title > li {
+    flex: 1;
+}
+
+.bids-title {
+    text-align: left;
+}
+
+.asks-title {
+    text-align: right;
+}
+
+.container__bids-title {
+    border-right: 1px solid #f0f2f5;
+}
+
+.container__title {
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.bids-title__item.last, .bids-table__cell.last {
+    text-align: right;
+}
+
+.asks-title__item.first, .asks-table__cell.first {
+    text-align: left;
+}
+
+/*Строки таблицы*/
+
+.container__table {
+    display: flex;
+    justify-content: space-around;
+    color: #87949e;
+    padding-top: 35px;
+}
+
+.container__bids-table, .container__asks-table {
+    flex: 1;
+    padding: 10px;
+}
+
+.container__bids-table {
+    border-right: 1px solid #f0f2f5;
+}
+
+.bids-table, .asks-table {
+    width: 100%;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line > td {
+    flex: 1;
+}
+
+.bids-table {
+    text-align: left;
+}
+
+.asks-table {
+    text-align: right;
+}
+
+.bids-table__line:hover, .asks-table__line:hover {
+    background: #dae1ef;
+}
